@@ -5,7 +5,6 @@ import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { RolesModule } from './roles/roles.module';
 import config from './common/insfractructure/config/config';
 import { BookStoreModule } from './book_store/book_store.module';
 import { BookModule } from './book/book.module';
@@ -13,7 +12,7 @@ import { User } from './auth/entity/user.entity';
 import { Book } from './book/entity/book.entity';
 import { BookStore } from './book_store/entity/book_store.entity';
 import { ResetToken } from './auth/entity/reset-token.entity';
-import { Permission, Role } from './roles/entity/role.entity';
+
 
 @Module({
   imports: [
@@ -48,7 +47,6 @@ import { Permission, Role } from './roles/entity/role.entity';
       inject: [ConfigService],
     }),
     AuthModule,
-    RolesModule,
     BookModule,
     BookStoreModule,
   ],

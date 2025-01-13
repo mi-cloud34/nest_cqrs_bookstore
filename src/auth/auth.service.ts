@@ -21,7 +21,6 @@ import { MailService } from 'src/common/insfractructure/services/mailService';
 import { Roles } from 'src/common/insfractructure/decorators/roles.decorator';
 import { Rolles } from './enums/role.enum';
 import { RolesGuard } from 'src/common/insfractructure/guards/roles.quard';
-import { AuthorizationGuard } from 'src/common/insfractructure/guards/authorization.guard';
 import { AuthenticationGuard } from 'src/common/insfractructure/guards/authentication.guard';
 
 @Injectable()

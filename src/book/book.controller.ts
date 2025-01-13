@@ -4,7 +4,6 @@ import { Message } from 'src/common/insfractructure/decorators/message.decorator
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { CreateBookDto } from './application/dtos/create_book.dto';
 import { CreateBookCommand } from './application/commons/create_book/create_book.command';
-import { AuthorizationGuard } from 'src/common/insfractructure/guards/authorization.guard';
 import { GetBookByIdQuery } from './application/queries/get_book_by_id/get_book_by_id.query';
 import { GetBooksQuery } from './application/queries/get_books/get_book.query';
 import { BookIdDto } from './application/dtos/book_id.dto';

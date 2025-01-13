@@ -1,5 +1,4 @@
 import { IsEmail, isEnum, IsEnum, IsNumber, IsString, Matches, MinLength } from 'class-validator';
-import { Role } from 'src/roles/entity/role.entity';
 import { Rolles } from '../enums/role.enum';
 
 export class SignupDto {

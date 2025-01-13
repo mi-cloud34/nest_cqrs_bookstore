@@ -6,13 +6,12 @@ import { ChangePasswordDto } from './dtos/change-password.dto';
 import { AuthenticationGuard } from 'src/common/insfractructure/guards/authentication.guard';
 import { ForgotPasswordDto } from './dtos/forgot-password.dto';
 import { ResetPasswordDto } from './dtos/reset-password.dto';
-import { Resource } from 'src/roles/enums/resource.enum';
-import { Action } from 'src/roles/enums/action.enum';
-import { Permissions } from 'src/common/insfractructure/decorators/permissions.decorator';
 import { Roles } from 'src/common/insfractructure/decorators/roles.decorator';
 import { Rolles } from './enums/role.enum';
 import { RolesGuard } from 'src/common/insfractructure/guards/roles.quard';
 
+
+@UseGuards(AuthenticationGuard)
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService
